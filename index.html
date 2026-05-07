@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Pagina personal Sobre mi - estudiante de Ingenieria Informatica y futuro desarrollador de IA."
+      content="Plantilla SPA premium moderna con navegacion interna fluida y diseno elegante en tonos rosa."
     />
-    <title>Anderson Payares Alvarez | Futuro Desarrollador de IA</title>
+    <title>Roseflow Studio | Plantilla SPA Premium</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,105 +17,172 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header id="inicio" class="hero section reveal">
-      <div class="container">
-        <p class="eyebrow">Portada Personal</p>
-        <h1>Anderson Payares Alvarez</h1>
-        <p class="lead">
-          Estudiante de Ingenieria Informatica con enfoque en desarrollo de
-          software e Inteligencia Artificial.
-        </p>
+    <div class="bg-blur bg-blur-left" aria-hidden="true"></div>
+    <div class="bg-blur bg-blur-right" aria-hidden="true"></div>
 
-        <div class="section-menu" aria-label="Navegacion principal">
-          <a href="#informatica" class="menu-card">
-            <h3>Seccion Informatica</h3>
-            <p>Carrera, conocimientos y experiencia tecnica.</p>
-          </a>
-          <a href="#ia" class="menu-card">
-            <h3>Seccion IA</h3>
-            <p>Vision profesional y objetivos en inteligencia artificial.</p>
-          </a>
-          <a href="#sobre-mi" class="menu-card">
-            <h3>Seccion Sobre mi</h3>
-            <p>Perfil personal, pasiones y aspiraciones a futuro.</p>
-          </a>
-        </div>
-
-        <div class="hero-actions">
-          <a href="#informatica" class="btn btn-primary">Ver secciones</a>
-          <a href="#sobre-mi" class="btn btn-secondary">Ir a Sobre mi</a>
-        </div>
+    <header class="site-header">
+      <div class="container navbar">
+        <a href="#" class="brand" data-route="home">
+          <span class="brand-logo">RF</span>
+          <span class="brand-text">Roseflow Studio</span>
+        </a>
+        <nav class="nav-links" aria-label="Navegacion principal">
+          <button class="nav-link" data-route="home">Inicio</button>
+          <button class="nav-link" data-route="options">Nuestras bases</button>
+          <button class="nav-link" data-route="closing">Cierre</button>
+        </nav>
       </div>
     </header>
 
-    <main>
-      <section id="informatica" class="section reveal">
-        <div class="container section-grid">
-          <article class="card section-content">
-            <h2>Informatica</h2>
-            <p>
-              Soy estudiante de cuarto semestre de Ingenieria Informatica con
-              base en programacion, desarrollo web, bases de datos e
-              Inteligencia Artificial. Me enfoco en crear soluciones limpias,
-              profesionales y escalables.
+    <main class="app-main">
+      <section class="view active" id="view-home" data-view="home" aria-labelledby="home-title">
+        <div class="container hero-grid">
+          <article class="hero-content animate-in">
+            <p class="eyebrow">Carta digital</p>
+            <h1 id="home-title">Una historia que comenzo simple y se volvio esencial</h1>
+            <p class="lead">
+              Nos conocimos sin imaginar todo lo que podia crecer entre nosotros.
+              Con el tiempo, cada conversacion, cada salida y cada paso compartido
+              fue dando forma a una relacion mas fuerte, mas consciente y mas
+              bonita. Esta pagina resume las bases que hemos construido juntos:
+              aquello que sostiene lo que somos hoy y lo que queremos seguir siendo.
             </p>
-            <a href="#inicio" class="text-link">Volver al inicio</a>
+            <div class="hero-actions">
+              <button class="btn btn-primary" data-route="options">
+                Conoce nuestra historia
+              </button>
+            </div>
           </article>
-          <article class="card image-card">
+          <article class="hero-visual card animate-in-delayed">
             <img
-              src="assets/informatica.jpg"
-              alt="Imagen relacionada con informatica y desarrollo web"
+              src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=1200&q=80"
+              alt="Equipo profesional en ambiente moderno"
               loading="lazy"
             />
           </article>
         </div>
       </section>
 
-      <section id="ia" class="section reveal">
-        <div class="container section-grid">
-          <article class="card section-content highlighted">
-            <h2>Inteligencia Artificial</h2>
-            <p>
-              Mi meta es convertirme en uno de los mejores desarrolladores de
-              IA. Aspiro a crear inteligencia artificial avanzada, desarrollar
-              proyectos innovadores y consolidarme como referente en esta area.
-            </p>
-            <a href="#inicio" class="text-link">Volver al inicio</a>
-          </article>
-          <article class="card image-card">
-            <img
-              src="assets/ia.jpg"
-              alt="Imagen relacionada con inteligencia artificial"
-              loading="lazy"
-            />
+      <section class="view" id="view-options" data-view="options" aria-labelledby="options-title">
+        <div class="container">
+          <div class="section-head animate-in">
+            <p class="eyebrow">Selecciona una opcion</p>
+            <h2 id="options-title">Soluciones destacadas para potenciar tu proyecto</h2>
+              <p class="section-subtitle">
+                Cinco pilares que cuidan, elevan y dan sentido a nuestra relacion.
+              </p>
+          </div>
+
+          <div class="cards-grid">
+            <article class="service-card card animate-in">
+              <img
+                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80"
+                alt="Pareja caminando en ambiente tranquilo"
+                loading="lazy"
+              />
+              <h3>Confianza</h3>
+              <p class="card-subtitle">La calma de sabernos en el mismo lugar.</p>
+              <p>La honestidad y la transparencia nos permiten avanzar con seguridad.</p>
+              <button class="btn btn-secondary" data-detail="trust">Leer seccion</button>
+            </article>
+
+            <article class="service-card card animate-in">
+              <img
+                src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?auto=format&fit=crop&w=900&q=80"
+                alt="Pareja apoyandose mutuamente"
+                loading="lazy"
+              />
+              <h3>Apoyo Mutuo</h3>
+              <p class="card-subtitle">Crecer de la mano, incluso en dias retadores.</p>
+              <p>Nos impulsamos, celebramos logros y convertimos los desafios en aprendizaje.</p>
+              <button class="btn btn-secondary" data-detail="support">Leer seccion</button>
+            </article>
+
+            <article class="service-card card animate-in">
+              <img
+                src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=900&q=80"
+                alt="Pareja compartiendo un cafe"
+                loading="lazy"
+              />
+              <h3>Tiempo de Calidad</h3>
+              <p class="card-subtitle">Lo simple tambien deja huella.</p>
+              <p>Las conversaciones sencillas y los momentos cotidianos se vuelven recuerdos valiosos.</p>
+              <button class="btn btn-secondary" data-detail="quality-time">Leer seccion</button>
+            </article>
+
+            <article class="service-card card animate-in">
+              <img
+                src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=900&q=80"
+                alt="Pareja escuchandose con respeto"
+                loading="lazy"
+              />
+              <h3>Respeto</h3>
+              <p class="card-subtitle">Amar tambien es escuchar con atencion.</p>
+              <p>Nos cuidamos en la forma de hablar, en la manera de entender y en como nos tratamos.</p>
+              <button class="btn btn-secondary" data-detail="respect">Leer seccion</button>
+            </article>
+
+            <article class="service-card card animate-in">
+              <img
+                src="https://images.unsplash.com/photo-1511988617509-a57c8a288659?auto=format&fit=crop&w=900&q=80"
+                alt="Pareja proyectando metas"
+                loading="lazy"
+              />
+              <h3>Crecimiento</h3>
+              <p class="card-subtitle">Ser mejores sin dejar de ser nosotros.</p>
+              <p>Maduramos, aprendemos y construimos un futuro bonito con metas compartidas.</p>
+              <button class="btn btn-secondary" data-detail="growth">Leer seccion</button>
+            </article>
+          </div>
+
+          <p class="quote-break animate-in">
+            "El amor maduro no corre: se elige, se cuida y se construye."
+          </p>
+          <div class="hero-actions">
+            <button class="btn btn-primary" data-route="closing">Ir al cierre</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="view" id="view-detail" data-view="detail" aria-labelledby="detail-title">
+        <div class="container">
+          <article class="detail-layout card animate-in">
+            <img id="detail-image" src="" alt="Imagen de detalle de servicio" loading="lazy" />
+            <div class="detail-content">
+              <p class="eyebrow">Vista interna</p>
+              <h2 id="detail-title"></h2>
+              <h3 id="detail-subtitle" class="detail-subtitle"></h3>
+              <p id="detail-description"></p>
+              <button class="btn btn-primary" data-route="options">Volver a opciones</button>
+            </div>
           </article>
         </div>
       </section>
 
-      <section id="sobre-mi" class="section reveal">
-        <div class="container section-grid">
-          <article class="card image-card">
-            <img src="assets/personal.jpg" alt="Foto personal" loading="lazy" />
-          </article>
-          <article class="card section-content">
-            <h2>Sobre mi</h2>
-            <p>
-              Soy disciplinado, curioso y analitico. Me apasiona aprender nuevas
-              tecnologias, construir proyectos con impacto y crecer de forma
-              constante tanto en lo tecnico como en lo personal.
+      <section class="view" id="view-closing" data-view="closing" aria-labelledby="closing-title">
+        <div class="container">
+          <article class="hero-content animate-in">
+            <p class="eyebrow">Cierre</p>
+            <h2 id="closing-title">Una historia que se construye cada dia</h2>
+            <p class="section-subtitle">Elegancia en el amor, firmeza en las decisiones.</p>
+            <p class="lead">
+              Hemos entendido que una relacion bonita no depende de grandes
+              discursos, sino de decisiones constantes: hablar con verdad, estar
+              presentes, cuidar los detalles y elegirnos incluso en los dias
+              comunes. El amor se fortalece cuando se vuelve practica diaria,
+              cuando se honra en lo pequeno y cuando se mira al futuro con
+              esperanza. Esta historia no termina aqui; apenas sigue escribiendose.
             </p>
-            <a href="#inicio" class="text-link">Volver al inicio</a>
+            <p class="quote-break">"Te elijo con calma, con certeza y con amor."</p>
           </article>
         </div>
       </section>
     </main>
 
-    <footer class="footer reveal">
-      <div class="container">
-        <p>
-          Construyendo mi camino en tecnologia e Inteligencia Artificial.
-          <span id="year"></span>
-        </p>
+    <footer class="footer">
+      <div class="container footer-content">
+        <p>Diseno premium, navegacion SPA y experiencia moderna.</p>
+        <p>&copy; <span id="year"></span> Roseflow Studio</p>
       </div>
     </footer>
 
